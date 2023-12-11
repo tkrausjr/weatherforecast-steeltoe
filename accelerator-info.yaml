@@ -1,0 +1,15 @@
+id: db26d3b1-9848-4418-9493-945b925fde8d
+timestamp: 2023-12-11T17:37:57Z
+username: guest
+source: TAP-GUI
+accelerator:
+  name: weatherforecast-steeltoe
+  source:
+    image: registry.tanzu.vmware.com/vmware-tap-packages/tap-packages@sha256:e531fcd5b89d3c196fe4891bc6c9a98854f809991d24a2c144270205cdd6c280
+fragments:
+  - name: tap-workload
+    source:
+      image: registry.tanzu.vmware.com/vmware-tap-packages/tap-packages@sha256:d9c7d8d322f0740666ba7c752a9174d1eb66274338c4f0e211edb1d448104c2a
+options:
+  applicationName: sample-weather
+  projectName: weatherforecast-steeltoe
